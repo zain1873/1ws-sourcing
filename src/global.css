@@ -1,0 +1,40 @@
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000; /* Black background */
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.service-card:hover::before {
+  transform: scaleY(1);
+}
+
+.service-card,
+.service-card * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover text color to white */
+.service-card:hover .service-title ,
+.service-card:hover .service-description,
+.service-card:hover .service-link {
+  color: white;
+}
+.service-icon {
+    transition: .3s;
+    font-weight: 700;
+}
+
+.service-card:hover .service-icon  {
+    background-color: #fff;
+    color: #000;
+}
+
+.max-w-7xl {
+    max-width: 100rem !important;
+}
