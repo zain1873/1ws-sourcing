@@ -20,9 +20,12 @@ const Hero = () => {
               and comprehensive solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+             <a href="/contact">
+              <button  className="bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-colors">
                 Get A Quote
               </button>
+             </a>
+              
               <button className="border border-gray-300 text-black px-8 py-4 rounded-lg font-medium hover:bg-gray-50 transition-colors flex items-center">
                 Explore Services
                 <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
